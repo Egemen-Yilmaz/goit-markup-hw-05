@@ -49,6 +49,71 @@
       </div>
     </header>
     <main class="main-class">
+      <div class="modal-backdrop is-open">
+        <div class="modal-content">
+          <!-- Kapatma butonu -->
+          <div class="modal-close-btn">
+            <svg class="icon icon-close" width="8" height="8">
+              <use xlink:href="./images/symbol-defs.svg#icon-close"></use>
+            </svg>
+          </div>
+
+          <p>Leave your contacts and we will call you back</p>
+
+          <div class="form-container">
+            <label for="name">Name</label>
+            <div class="input-wrapper">
+              <svg class="icon icon-person" width="18" height="24">
+                <use xlink:href="./images/symbol-defs.svg#icon-person"></use>
+              </svg>
+              <input
+                type="text"
+                id="name"
+                name="name"
+                placeholder="Your Name"
+              />
+            </div>
+
+            <label for="phone">Phone</label>
+            <div class="input-wrapper">
+              <svg class="icon icon-phone" width="18" height="24">
+                <use xlink:href="./images/symbol-defs.svg#icon-phone"></use>
+              </svg>
+              <input type="tel" id="phone" name="phone" placeholder="+90..." />
+            </div>
+
+            <label for="email">Email</label>
+            <div class="input-wrapper">
+              <svg class="icon icon-email" width="18" height="24">
+                <use xlink:href="./images/symbol-defs.svg#icon-email"></use>
+              </svg>
+              <input
+                type="email"
+                id="email"
+                name="email"
+                placeholder="E-mail"
+              />
+            </div>
+
+            <label for="comment">Comment</label>
+            <textarea
+              id="comment"
+              name="comment"
+              placeholder="Text input"
+              rows="4"
+            ></textarea>
+          </div>
+          <div class="checkbox-container">
+            <input type="checkbox" />
+            <p>
+              I accept the terms and conditions of the
+              <a href="#">Privacy Policy</a>
+            </p>
+          </div>
+
+          <button type="submit">Send</button>
+        </div>
+      </div>
       <div class="container">
         <div class="hero-div">
           <h1>Effective Solutions<br />for Your Business</h1>
@@ -85,7 +150,7 @@
             </li>
             <li>
               <div class="icon-div">
-                <svg class="icon icon-antenna" . width="64" height="64">
+                <svg class="icon icon-antenna" width="64" height="64">
                   <use xlink:href="./images/symbol-defs.svg#icon-diagram"></use>
                 </svg>
               </div>
@@ -513,7 +578,7 @@
             </li>
           </ul>
         </div>
-        <div class="footer-right">
+        <div class="footer-mid">
           <p>Social media</p>
           <div class="footer-social-links">
             <a href="https://www.instagram.com/" target="_blank">
@@ -552,6 +617,17 @@
               </svg>
             </a>
           </div>
+        </div>
+        <div class="footer-right">
+          <p class="footer-title">Subscribe</p>
+          <form class="subscribe-form">
+            <input type="email" id="sub" name="sub" placeholder="E-mail" />
+            <button type="submit" class="subscribe-btn">
+              Subscribe<svg class="icon icon-p-plane" width="24" height="24">
+                <use xlink:href="./images/symbol-defs.svg#icon-p-plane"></use>
+              </svg>
+            </button>
+          </form>
         </div>
       </div>
     </footer>
